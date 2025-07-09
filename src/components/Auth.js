@@ -1,7 +1,7 @@
 import { auth, provider } from "../firebase-config";
 import { signInWithPopup } from "firebase/auth";
 import Cookies from "universal-cookie";
-import "../styles/Auth.css"; // You’ll update this file
+import "../styles/Auth.css";
 
 const cookies = new Cookies();
 
@@ -19,7 +19,7 @@ export const Auth = ({ setIsAuth }) => {
   return (
     <div className="auth-container">
       <div className="login-card">
-        <img src="/logo512.png" alt="QuickChat Logo" className="login-logo" />
+<img src="logo512.png" alt="QuickChat Logo" className="login-logo" />
         <h1>Quick Chat</h1>
         <p>The easiest way to chat with people all around the world.</p>
         <button onClick={signInWithGoogle} className="google-btn" >

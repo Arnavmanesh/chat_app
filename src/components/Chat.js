@@ -9,7 +9,7 @@ import {
   where,
 } from "firebase/firestore";
 import { auth, db } from "../firebase-config";
-import "../styles/Chat.css"; // Make sure this matches the AlterClass-style CSS
+import "../styles/Chat.css"; 
 
 export const Chat = ({ room, setRoom }) => {
   const [newMessage, setNewMessage] = useState("");
